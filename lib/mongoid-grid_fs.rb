@@ -305,7 +305,7 @@
             attr_accessor :defaults
           end
 
-          self.default_collection_name = "#{ prefix.class.to_s }.files"
+          # self.default_collection_name = "#{ prefix.class.to_s }.files"
           self.defaults = Defaults.new
 
           self.defaults.chunkSize = 4 * (mb = 2**20)
