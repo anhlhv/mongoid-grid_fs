@@ -445,7 +445,7 @@
             attr_accessor :namespace
           end
 
-          self.default_collection_name = "#{ prefix }.chunks"
+          # self.default_collection_name = "#{ prefix }.chunks"
 
           field(:n, :type => Integer, :default => 0)
           field(:data, :type => (defined?(Moped::BSON) ? Moped::BSON::Binary : BSON::Binary))
